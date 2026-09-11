@@ -1,0 +1,5 @@
+[toolchain]
+# plonky2_field uses `#![feature(specialization)]`, which is nightly-only.
+# The upstream Reckle Trees repo pins nightly-2024-01-21 for the same reason.
+channel = "nightly"
+profile = "minimal"

@@ -1,0 +1,252 @@
+{
+  "machine": {
+    "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "logical_cores": 12,
+    "os": "windows x86_64",
+    "rustc": "nightly",
+    "plonky2": "1.1.0",
+    "profile": "release (opt-level=3, lto=thin, codegen-units=1)"
+  },
+  "configs": [
+    {
+      "q": 2,
+      "height": 4,
+      "num_leaves": 16,
+      "setup_ms": 10638.9969,
+      "lambda_size_proofs": 15,
+      "circuit_sizes": [
+        {
+          "level": 1,
+          "k": 1,
+          "degree": 16
+        },
+        {
+          "level": 1,
+          "k": 2,
+          "degree": 16
+        },
+        {
+          "level": 2,
+          "k": 1,
+          "degree": 8192
+        },
+        {
+          "level": 2,
+          "k": 2,
+          "degree": 8192
+        },
+        {
+          "level": 3,
+          "k": 1,
+          "degree": 8192
+        },
+        {
+          "level": 3,
+          "k": 2,
+          "degree": 8192
+        },
+        {
+          "level": 4,
+          "k": 1,
+          "degree": 8192
+        },
+        {
+          "level": 4,
+          "k": 2,
+          "degree": 8192
+        }
+      ],
+      "aggregation": [
+        {
+          "batch_size": 1,
+          "nodes_proved": 4,
+          "aggregate_ms": 3483.3183,
+          "verify_ms": 7.5465,
+          "proof_bytes": 132920
+        },
+        {
+          "batch_size": 2,
+          "nodes_proved": 7,
+          "aggregate_ms": 5878.4814,
+          "verify_ms": 7.970599999999999,
+          "proof_bytes": 132920
+        },
+        {
+          "batch_size": 4,
+          "nodes_proved": 11,
+          "aggregate_ms": 8664.437,
+          "verify_ms": 7.1328,
+          "proof_bytes": 132920
+        },
+        {
+          "batch_size": 8,
+          "nodes_proved": 15,
+          "aggregate_ms": 9803.934500000001,
+          "verify_ms": 8.1107,
+          "proof_bytes": 132920
+        },
+        {
+          "batch_size": 16,
+          "nodes_proved": 15,
+          "aggregate_ms": 9039.9689,
+          "verify_ms": 8.533199999999999,
+          "proof_bytes": 132920
+        }
+      ],
+      "per_k": [
+        {
+          "k": 1,
+          "root_prove_ms": 1095.3698000000002
+        },
+        {
+          "k": 2,
+          "root_prove_ms": 1143.2214000000001
+        }
+      ],
+      "updates": [
+        {
+          "batch_size": 8,
+          "updated_leaf": 0,
+          "leaf_in_batch": true,
+          "proofs_recomputed": 4,
+          "update_ms": 3378.8131,
+          "full_reaggregate_ms": 8001.885700000001,
+          "speedup": 2.3682534260329464
+        },
+        {
+          "batch_size": 8,
+          "updated_leaf": 1,
+          "leaf_in_batch": false,
+          "proofs_recomputed": 4,
+          "update_ms": 3583.7834,
+          "full_reaggregate_ms": 8409.8817,
+          "speedup": 2.346648991119274
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "height": 2,
+      "num_leaves": 16,
+      "setup_ms": 11325.325700000001,
+      "lambda_size_proofs": 5,
+      "circuit_sizes": [
+        {
+          "level": 1,
+          "k": 1,
+          "degree": 32
+        },
+        {
+          "level": 1,
+          "k": 2,
+          "degree": 32
+        },
+        {
+          "level": 1,
+          "k": 3,
+          "degree": 32
+        },
+        {
+          "level": 1,
+          "k": 4,
+          "degree": 32
+        },
+        {
+          "level": 2,
+          "k": 1,
+          "degree": 16384
+        },
+        {
+          "level": 2,
+          "k": 2,
+          "degree": 16384
+        },
+        {
+          "level": 2,
+          "k": 3,
+          "degree": 16384
+        },
+        {
+          "level": 2,
+          "k": 4,
+          "degree": 16384
+        }
+      ],
+      "aggregation": [
+        {
+          "batch_size": 1,
+          "nodes_proved": 2,
+          "aggregate_ms": 2249.1707,
+          "verify_ms": 8.6967,
+          "proof_bytes": 146452
+        },
+        {
+          "batch_size": 2,
+          "nodes_proved": 3,
+          "aggregate_ms": 2432.4984999999997,
+          "verify_ms": 8.0068,
+          "proof_bytes": 146452
+        },
+        {
+          "batch_size": 4,
+          "nodes_proved": 5,
+          "aggregate_ms": 2484.7324999999996,
+          "verify_ms": 7.913399999999999,
+          "proof_bytes": 146452
+        },
+        {
+          "batch_size": 8,
+          "nodes_proved": 5,
+          "aggregate_ms": 2994.8334999999997,
+          "verify_ms": 8.4075,
+          "proof_bytes": 146452
+        },
+        {
+          "batch_size": 16,
+          "nodes_proved": 5,
+          "aggregate_ms": 2348.4365000000003,
+          "verify_ms": 9.4459,
+          "proof_bytes": 146452
+        }
+      ],
+      "per_k": [
+        {
+          "k": 1,
+          "root_prove_ms": 2154.0328
+        },
+        {
+          "k": 2,
+          "root_prove_ms": 2131.1281000000004
+        },
+        {
+          "k": 3,
+          "root_prove_ms": 2234.2304
+        },
+        {
+          "k": 4,
+          "root_prove_ms": 2245.4896999999996
+        }
+      ],
+      "updates": [
+        {
+          "batch_size": 8,
+          "updated_leaf": 0,
+          "leaf_in_batch": true,
+          "proofs_recomputed": 2,
+          "update_ms": 2307.1997,
+          "full_reaggregate_ms": 2548.0876000000003,
+          "speedup": 1.1044070437422475
+        },
+        {
+          "batch_size": 8,
+          "updated_leaf": 1,
+          "leaf_in_batch": false,
+          "proofs_recomputed": 2,
+          "update_ms": 2229.4559,
+          "full_reaggregate_ms": 2430.9078,
+          "speedup": 1.0903592217275972
+        }
+      ]
+    }
+  ]
+}
