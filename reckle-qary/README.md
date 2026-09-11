@@ -138,7 +138,7 @@ claim the curve is flat, never that some k is faster. RESULTS.md has the rest of
 
 ```powershell
 . .\env.ps1            # Windows only, drops an old C:\MinGW from PATH and moves target/
-cargo test --release   # 32 tests
+cargo test --release   
 cargo run --release --bin bench -- --out results/bench.json
 python scripts/render_results.py results/bench.json RESULTS.md
 ```
