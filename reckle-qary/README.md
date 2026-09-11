@@ -158,6 +158,4 @@ reviewed each other's parts and took the main design decisions together.
 - Ignacio Esteban Losiggio and Barbara Monica Rivero worked mostly on the code and the
   tests, that is the q-ary tree and canonical hashing, the Q_k circuits, the recursive
   prover and verifier, and the completeness, soundness and updatability test suites.
-- Josefina Negrotto and Maria del Pilar Larriera Ibarra worked mostly on the rest, that
-  is the analysis of the paper, the feasibility study, the benchmarks and the scripts
-  that produce the tables, and the writing of this README.
+- Josefina Negrotto and Maria del Pilar Larriera Ibarra worked mostly on the analysis of the paper, the feasibility study, the benchmarks and the scripts that produce the tables, and the writing of this README.
